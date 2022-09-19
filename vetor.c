@@ -1,3 +1,4 @@
+//Calcula desvio padrão de 5 números:
 #include <stdio.h>
 
 #include <math.h>
