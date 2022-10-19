@@ -57,8 +57,8 @@ int main(){
     
 //Desvio Padrão
     for(i=0;i<quantidade;i++) {
-        Variancia = Variancia + pow(n[i] - Media,2) /(quantidade-1);
-        DesvioPadrao = sqrt(DesvioPadrao);
+        Variancia = Variancia + pow(n[i] - Media,2) /quantidade;
+        DesvioPadrao = sqrt(Variancia);
     } 
     
 //Mediana
