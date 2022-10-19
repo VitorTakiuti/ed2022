@@ -64,20 +64,18 @@ int main(){
 //Mediana
     for(i=0;i<quantidade;i++) {
         for(j = i + 1; j < quantidade; j++) {
-            if(n[i] > n[j]) {
+            if(n[i] > n[j]) {https://github.com/VitorTakiuti/ed2022/blob/2526a59d324e77e812bcf4e4609739bb3957b792/estatisticabasica.c
                 ValorDoMeio = n[j];
-                n[i]=n[j];
-                n[j]=ValorDoMeio;
+                n[j]=n[i];
+                n[i]=ValorDoMeio;
             }
         }
     }
-        if(quantidade%2 == 0) {
-            Mediana = (n[quantidade/2-1]+(n[quantidade/2]));
-            Mediana = Mediana/2;
-        }
-        else{
+        if(quantidade%2 != 0) {
             Mediana = n[quantidade/2];
-        }
+        } else {
+            Mediana = (n[(quantidade-1) /2]+n[quantidade/2])/2;         
+        } 
 
 //Printado os valores dos dados
     printf("Valor Minimo: %2.2f \n", ValorMinimo);
